@@ -1,0 +1,14 @@
+.hotels-component {
+    width: 60%;
+    margin: 5% 0;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+
+    .hotel-sortingPanel {
+        width: 40%;
+    }
+    .hotel-results {
+        width: 100%;
+    }
+}

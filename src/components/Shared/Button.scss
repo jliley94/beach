@@ -1,0 +1,63 @@
+.button {
+    color: #17317f;
+    background: #fff;
+    font-size: calc(10px + 1vmin);
+    font-family: "Segoe UI", Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    user-select: none;
+    cursor: pointer;
+
+    a {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 20px;
+            &:hover {
+                background-color: #d9e2ff;
+            }
+
+            svg {
+                color: #d4d4d4;
+                width: 30px;
+            }
+        }
+
+    &.sort {
+
+        &.active {
+            background: #17317f;
+            color: #fff;
+            a:hover {
+                background-color: #17317f;
+            }
+            svg {
+                color: #fff;
+            }
+        }
+    }
+
+    &.expand {
+        //background: #fff;
+        .button-name {
+            padding: 0 15px 0 5px;
+        }
+        svg {
+            color: #17317f; 
+        }
+    }
+
+    &.book {
+        background: #fedc07;
+        border-radius: 10px;
+        a {
+            display: block;
+
+            .button-name {
+                text-align: center;
+
+                div {
+                    font-size: calc(10px + 2vmin);
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+}

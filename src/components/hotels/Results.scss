@@ -1,0 +1,86 @@
+.hotel-results {
+    margin: 0 10%;
+    font-size: calc(10px + 1vmin);
+
+    .hotel-card {
+        color: #000;
+        background: #fff;
+        margin-bottom: 5%;
+
+        .hotel-card-main {
+            display: flex;
+            position: relative;
+            
+            .hotel-thumbnail {
+                width: 60%;
+                overflow: hidden;
+
+                img {
+                    height: 100%;
+                    width: 100%;
+                    object-fit: cover;
+                    object-position: center;
+                }
+            }
+
+            .hotel-details {
+                color: black;
+                width: 40%;
+                text-align: left;
+                padding: 0 20px;
+
+                .detail-name {
+                    color: #17317f;
+                    margin: 5px 0;
+                }
+                .detail-destination {
+                    color: #8a8a8a;
+                }
+
+                .hotel-rating {
+                    color: #fedc07;
+                    margin: 10px 0;
+                }
+                .detail-book {
+                    margin: 10px 0;
+                }
+            }
+
+            .hotel-overview {
+                position: absolute;
+                bottom: 0px;
+            }
+        }
+
+        .hotel-expanded {
+            padding: 0 25px 25px;
+            text-align: left;
+            display: none;
+
+            h4 {
+                color: #17317f;
+            }
+
+            &.active {
+                display: block;
+            }
+        }
+    }
+
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .spinner {
+      animation: loading-spin infinite 1s linear;
+      font-size: calc(10px + 3vmin);
+    }
+  }
+
+@keyframes loading-spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
