@@ -7,7 +7,7 @@ export default function Button(props) {
       <div className={`button ${props.type} ${active}`}>
           <a onClick={(props.disabled) ? "" : props.action}>
               <div className="button-name" dangerouslySetInnerHTML={ {__html: props.name} }></div>
-              { (props.icon !== "") &&
+              { (!!props.icon) &&
                 <FontAwesomeIcon icon={props.icon} />
               }
           </a>
